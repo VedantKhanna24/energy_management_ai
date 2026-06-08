@@ -1,4 +1,5 @@
 import { Navigation } from '@/components/Navigation'
+import Link from 'next/link'
 import { Footer } from '@/components/Footer'
 import { ProblemCard, FeatureCard, TestimonialCard, TimelineStep } from '@/components/Cards'
 import { TrendingUp, BarChart3, Zap, Target, Leaf, AlertCircle, Droplets, Wind, Gauge } from 'lucide-react'
@@ -25,7 +26,7 @@ export default function Home() {
               Transform your business with accurate energy predictions and sustainability insights. Make smarter decisions, reduce emissions, and drive profitability.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary">Start Predicting →</button>
+              <Link href="/energy-predictor" className="btn-primary inline-block">Start Predicting →</Link>
               <button className="btn-secondary">Watch Demo</button>
             </div>
           </div>

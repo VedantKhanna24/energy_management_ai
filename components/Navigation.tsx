@@ -51,8 +51,8 @@ export function Navigation() {
         </div>
 
         <div className="flex items-center gap-3">
-          <button className="btn-secondary text-sm hidden sm:block">Sign In</button>
-          <button className="btn-primary text-sm">Get Started</button>
+          <Link href="/signin" className="btn-secondary text-sm hidden sm:block">Sign In</Link>
+          <Link href="/get-started" className="btn-primary text-sm">Get Started</Link>
         </div>
       </div>
     </nav>
